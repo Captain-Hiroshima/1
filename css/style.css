@@ -10,7 +10,7 @@ li{
 }
 .nav{
     height: 67px;
-    background-color: rgb(18, 82, 55);
+    background-image:linear-gradient(to right, rgba(115, 185, 142, 0), rgba(0, 173, 116, 0.904));
 }
 
 .nav-list{
@@ -29,14 +29,19 @@ li{
 }
 
 .nav-style{
-    color: rgb(161, 161, 161);
+    text-decoration: none;
+    color: rgb(165, 165, 165);
     padding: 10px 30px;
-    background-color: rgb(18, 82, 55);
     transition: all 1s;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
 }
 
 .nav-style-left{
+    box-shadow: 2px 2px 5px gray;
+    text-decoration: none;
     border-radius: 10px;
     color: white;
     padding: 10px 30px;
@@ -46,6 +51,7 @@ li{
 }
 
 .nav-style-left:hover{
+    text-decoration: none;
     border-radius: 10px;
     color: rgb(53, 179, 126);
     padding: 10px 30px;
@@ -56,10 +62,11 @@ li{
 }
 
 .nav-style:hover{
-    color: rgb(107, 107, 107);
+    text-decoration: none;
+    color: rgb(233, 233, 233);
     border-radius: 10px;
     padding: 10px 30px;
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(40, 185, 125);
     transition: all 1s;
 }
 
@@ -79,12 +86,12 @@ height: 700px;
 }
 
 .greet{
-    padding: 300px;
+padding-top: 300px;
     margin: 0px 0px;
     text-align: center;
 }
 .greet h1{
-    color: rgb(209, 197, 197);
+    color: rgb(226, 226, 226);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     font-weight: 100;
@@ -93,7 +100,7 @@ height: 700px;
 }
 .greet p{
     margin: 10px 0;
-    color: rgb(209, 197, 197);
+    color: rgb(223, 223, 223);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100;
     font-size: 16px;
@@ -102,12 +109,11 @@ height: 700px;
 
 
 .about-us{
-   height: 500px; 
+    margin: 40px 0px;
    width: 100%;
 }
 
 .about-us h1{
-    margin: 20px 0;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-weight: 400;
@@ -146,15 +152,147 @@ height: 700px;
 }
 
 .services{
+
     background-color:  rgba(0, 173, 115, 0.034);
-    height: 600px; 
-}
+    text-align: center;
+    padding-bottom: 30px;
+    /*  */}
 .services h1{
-    margin: 20px 0;
+    padding-top: 20px;
+    color: rgb(107, 107, 107);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    font-weight: 400;
-    color: rgb(107, 107, 107);
+    font-weight: 100;
     margin-bottom: 27px;
     font-size: 30px;
 }
+
+.services p{
+    
+    width: 50%;
+    color: gray;
+}
+
+
+.services-core-serctions{
+padding-top: 20px;
+text-align: center;
+}
+.services-core-serctions span{
+    text-align: center;
+}
+
+.services-core-serctions p{
+width: 100%;
+}
+
+.parallax{
+  background-image: url("../images/forest-931706_1920.jpg");
+  min-height: 220px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.parallax h1{
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.email{
+    
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 3px solid white;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+.email:hover{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 3px solid white;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+.portfolio{
+    margin-bottom: 20px;
+}
+.portfolio h1{
+    font-weight: 100;
+    color: rgb(129, 129, 129);
+    padding-top: 50px;
+    margin-bottom: 25px;
+}
+
+.row-section{
+    width: 80%;
+    padding-top: 40px;
+}
+
+  .column {
+    display: none;
+  }
+
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+      margin: 0 auto;
+    background-color: white;
+
+  }
+
+  .content img{
+      border-radius: 5px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #667;
+     color: white;
+  }
+
+  .footer{
+    background-image:linear-gradient(to right, rgba(115, 185, 142, 0), rgba(0, 173, 116, 0.904));
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer p{
+  padding-top: 10px;
+      color: rgb(92, 92, 92);
+      margin: 0;
+  }
