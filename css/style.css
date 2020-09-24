@@ -1,6 +1,7 @@
 *{
     padding: 0;
-margin: 0;}
+margin: 0;
+}
 a{
     text-decoration: none;
 
@@ -30,13 +31,15 @@ li{
 
 .nav-style{
     text-decoration: none;
-    color: rgb(165, 165, 165);
-    padding: 10px 30px;
+    
+    color: rgba(36, 194, 141, 0.904);
+    padding: 10px 20px;
     transition: all 1s;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 5px gray;
+    font-weight: bold;
 }
 
 .nav-style-left{
@@ -65,10 +68,36 @@ li{
     text-decoration: none;
     color: rgb(233, 233, 233);
     border-radius: 10px;
-    padding: 10px 30px;
     background-color: rgb(40, 185, 125);
     transition: all 1s;
 }
+
+@media only screen and (max-width: 1000px) {
+    .nav-style{
+        display: none;
+    }
+  }
+
+.nav-style-hidden-menu{
+    color: white;
+    display: none;
+}
+.nav-style-hidden-menu:hover{
+    color: gray;
+}
+
+.nav-style-hidden-menu:active{
+    color: red;
+
+}
+
+  @media only screen and (max-width: 1000px) {
+    .nav-style-hidden-menu{
+        color: white;
+        display: block;
+    }
+  }
+
 
 .hero-welcome{
 
@@ -157,6 +186,8 @@ padding-top: 300px;
     text-align: center;
     padding-bottom: 30px;
     /*  */}
+
+
 .services h1{
     padding-top: 20px;
     color: rgb(107, 107, 107);
@@ -168,10 +199,41 @@ padding-top: 300px;
 }
 
 .services p{
-    
+    display: block;
+    margin: 0 auto;
     width: 50%;
     color: gray;
 }
+
+@media only screen and (max-width: 900px) {
+    .services p{
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        color: gray;
+    }
+  }
+
+@media only screen and (max-width: 700px) {
+    .services p{
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        color: gray;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .services p{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        color: gray;
+    }
+  }
+
+
+
 
 
 .services-core-serctions{
@@ -187,7 +249,7 @@ width: 100%;
 }
 
 .parallax{
-  background-image: url("../images/forest-931706_1920.jpg");
+  background-image: url("../images/f1.jpg");
   min-height: 220px; 
   background-attachment: fixed;
   background-position: center;
@@ -215,6 +277,7 @@ width: 100%;
 }
 
 .email:hover{
+    
     padding: 10px 30px;
     background-color: transparent;
     border: 3px solid white;
@@ -238,6 +301,8 @@ width: 100%;
 }
 
   .column {
+      padding-top: 15px;
+      padding-bottom: 15px;
     display: none;
   }
 
@@ -256,7 +321,13 @@ width: 100%;
   }
 
   .content img{
+      height: 250px;
       border-radius: 5px;
+  }
+
+  .content h4{
+      color: rgba(148, 148, 148, 0.904);
+      font-weight: lighter;
   }
   
   /* The "show" class is added to the filtered elements */

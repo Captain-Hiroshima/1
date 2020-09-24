@@ -16,15 +16,22 @@
     <title>Photo Booth</title>
 </head>
 <body>
+  
     <div class="nav">
+      
+      <!-- bootstrap -->
             <ul class="nav-list">
                 <li class="nav-buttons-left"><a class="nav-style-left" href="#" ><b>Photo Booth</b></a></li>
                 <li class="nav-buttons-right"><a class="nav-style" href="#">Portfolio</a></li>
                 <li class="nav-buttons-right"><a class="nav-style" href="#">Services</a></li>
                 <li class="nav-buttons-right"><a class="nav-style" href="#">About Us</a></li>
                 <li class="nav-buttons-right"><a class="nav-style" href="#">Home</a></li>
+                <li class="nav-buttons-right"><a class="nav-style-hidden-menu" href="#"><svg style="margin: 0;" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                </svg></a></li>
             </ul>
-  
+        
+            
     </div>
 
     <div class="hero-welcome">
@@ -36,8 +43,8 @@
     <div class="services">
     
         <h1 class="text-center">Services</h1>
-        <center>  <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum eum quo, amet nesciunt numquam molestiae aliquid facilis debitis mollitia, tempore eos cum eveniet? Unde adipisci atque dicta dolorum fugit!</p>
-        </center>
+   <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum eum quo, amet nesciunt numquam molestiae aliquid facilis debitis mollitia, tempore eos cum eveniet? Unde adipisci atque dicta dolorum fugit!</p>
+
         <div class="services-core container">
             <div class="row">
             <div class="services-core-serctions  col-xl-4 col-lg-4 col-md-6 col-sm-12"><svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-camera" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -82,8 +89,13 @@
                   <p><span class="about-us-logo" ><svg width="1.5em" style="color: rgba(0, 173, 116, 0.904);" height="1.5em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                   </svg></span>          Flap Jack, in earum, magni dignissimos quos, incidunt modi</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi ea veritatis possimus iste beatae qui, nisi earum saepe iusto officia voluptatem suscipit ratione fugiat ipsum asperiores perspiciatis quas eos!</p>
-                </div>
+                  <p><span class="about-us-logo" ><svg width="1.5em" style="color: rgba(0, 173, 116, 0.904);" height="1.5em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg></span>          Chowder, quos, incidunt modi, magni dignissimos quos</p>
+                  <p><span class="about-us-logo" ><svg width="1.5em" style="color: rgba(0, 173, 116, 0.904);" height="1.5em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg></span>          Homer, Assumenda repudiandae, in earum, magni</p>
+                 </div>
         </div>
         </div>
     </div>
@@ -120,9 +132,9 @@
             <h1>Portfolio</h1>
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
+  <button class="btn" onclick="filterSelection('forest')"> Forest</button>
+  <button class="btn" onclick="filterSelection('desert')"> Desert</button>
+  <button class="btn" onclick="filterSelection('urban')"> Urban</button>
 </div>
 </center>
 
@@ -131,61 +143,90 @@
     <div class="row-section">
 <div class="row">
  
-  <div class="column nature col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="column forest col-xl-3 col-lg-4 col-md-6 col-sm-12">
     <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
+      <img src="images/f1.jpg" alt="Mountains" style="width:100%">
+      <h4>Verdun Forest</h4>
 
     </div>
   </div>
-  <div class="column nature col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="column forest col-xl-3 col-lg-4 col-md-6 col-sm-12">
     <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
+      <img src="images/f2.jpg" alt="Lights" style="width:100%">
+      <h4>Red Road of Silkov</h4>
 
     </div>
   </div>
-
-  <div class="column cars col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="column forest col-xl-3 col-lg-4 col-md-6 col-sm-12">
     <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-
-    </div>
-  </div>
-  <div class="column cars col-xl-3 col-lg-4 col-md-6 col-sm-12">
-    <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
+      <img src="images/f3.jpg" alt="Mountains" style="width:100%">
+      <h4>Eternal Forest</h4>
 
     </div>
   </div>
-  <div class="column cars col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="column forest col-xl-3 col-lg-4 col-md-6 col-sm-12">
     <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
+      <img src="images/f4.jpg" alt="Lights" style="width:100%">
+      <h4>Forest of Light</h4>
 
     </div>
   </div>
 
-  <div class="column people col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="column desert col-xl-3 col-lg-4 col-md-6 col-sm-12">
     <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="People" style="width:100%">
-      <h4>Girl</h4>
+      <img src="images/d1.jpg" alt="Car" style="width:100%">
+      <h4>Sinai Desert</h4>
 
     </div>
   </div>
-  <div class="column people col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="column desert col-xl-3 col-lg-4 col-md-6 col-sm-12">
     <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="People" style="width:100%">
-      <h4>Man</h4>
+      <img src="images/d2.jpg" alt="Car" style="width:100%">
+      <h4>Las Vegas Deser Road</h4>
 
     </div>
   </div>
-  <div class="column people col-xl-3 col-lg-4 col-md-6 col-sm-12">
+  <div class="column desert col-xl-3 col-lg-4 col-md-6 col-sm-12">
     <div class="content">
-      <img src="images/forest-931706_1920.jpg" alt="People" style="width:100%">
-      <h4>Woman</h4>
+      <img src="images/d3.jpg" alt="Car" style="width:100%">
+      <h4>Sinai Desert Arch</h4>
+
+    </div>
+  </div>
+
+  <div class="column desert col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="content">
+      <img src="images/d4.jpg" alt="People" style="width:100%">
+      <h4>Deser Road</h4>
+
+    </div>
+  </div>
+
+  <div class="column urban col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="content">
+      <img src="images/u1.jpg" alt="People" style="width:100%">
+      <h4>Shanghai</h4>
+
+    </div>
+  </div>
+  <div class="column urban col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="content">
+      <img src="images/u2.jpg" alt="People" style="width:100%">
+      <h4>Miami</h4>
+
+    </div>
+  </div>
+  <div class="column urban col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="content">
+      <img src="images/u3.jpg" alt="People" style="width:100%">
+      <h4>Florida</h4>
+
+    </div>
+  </div>
+  <div class="column urban col-xl-3 col-lg-4 col-md-6 col-sm-12">
+    <div class="content">
+      <img src="images/u4.jpg" alt="People" style="width:100%">
+      <h4>Florida</h4>
 
     </div>
   </div>
